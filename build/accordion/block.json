@@ -1,0 +1,65 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/accordion",
+  "version": "0.1.0",
+  "title": "Accordion",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "styles": [],
+  "attributes": {
+    "color": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "borderColor": {
+      "type": "string",
+      "default": "#E2E2E2"
+    },
+    "text": {
+      "type": "string",
+      "default": "Heading goes here"
+    },
+    "content": {
+      "type": "string",
+      "default": "Paragraph content goes here. You can edit this text."
+    },
+    "open": {
+      "type": "boolean",
+      "default": false
+    },
+    "fontSize": {
+      "type": "string",
+      "default": "20px"
+    },
+    "headingTag": {
+      "type": "string",
+      "default": "h3"
+    },
+    "headingIconOpen": {
+      "type": "string",
+      "default": "dashicons-plus-alt2"
+    },
+    "headingIconClose": {
+      "type": "string",
+      "default": "dashicons-minus"
+    }
+  },
+  "supports": {
+    "html": false,
+    "typography": {
+      "fontSize": true
+    }
+  },
+  "textdomain": "accordion",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

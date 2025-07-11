@@ -1,0 +1,30 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.accordion-header {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	padding: 10px;
+	& .accordion-header-text {
+		flex: 1;
+		margin-right: 20px;
+	}
+}
+
+
+.accordion-body {
+	padding: 10px;
+}
+
+.wp-block-create-block-accordion {
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+	margin: 0px;
+	padding: 0px;
+	border-radius: 5px;
+	overflow: hidden;
+}
