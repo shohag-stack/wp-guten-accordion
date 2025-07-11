@@ -32,10 +32,10 @@ document.addEventListener('DOMContentLoaded', () => {
 		if (!header || !body || !icon) return;
 
 		header.addEventListener('click', () => {
-			const isOpen = accordion.classList.contains('is-open');
 
 			// Toggle class
 			accordion.classList.toggle('is-open');
+            const isOpen = accordion.classList.contains('is-open');
 
 			// Show/hide content
 			body.style.display = isOpen ? 'none' : 'block';

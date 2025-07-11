@@ -13,6 +13,8 @@ export default function Save({ attributes }) {
 			borderColor: borderColor,
 			color: color,
 		},
+        'data-icon-open': headingIconOpen,
+	    'data-icon-close': headingIconClose,
 	});
 
     return (
