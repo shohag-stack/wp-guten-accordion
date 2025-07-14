@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/lottie-embed",
+  "version": "0.1.0",
+  "title": "Lottie Embed",
+  "category": "widgets",
+  "icon": "smiley",
+  "description": "Example block scaffolded with Create Block tool.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "jsonUrl": {
+      "type": "string",
+      "default": "https://lottie.host/c7d7d859-c2a2-4cb5-9de6-a607de25a940/0LyHkOfpLB.json"
+    },
+    "loop": {
+      "type": "boolean",
+      "default": false
+    },
+    "autoPlay": {
+      "type": "boolean",
+      "default": true
+    },
+    "speed": {
+      "type": "number",
+      "default": 1
+    },
+    "direction": {
+      "type": "number",
+      "default": 1
+    },
+    "containerBg": {
+      "type": "string",
+      "default": "#ffffff"
+    }
+  },
+  "textdomain": "lottie-embed",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

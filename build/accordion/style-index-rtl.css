@@ -20,6 +20,7 @@
 
 .accordion-body {
   padding: 10px;
+  display: none;
 }
 
 .wp-block-create-block-accordion {
@@ -28,5 +29,9 @@
   margin: 0px;
   padding: 0px;
   border-radius: 5px;
-  overflow: hidden;
+  height: auto;
+}
+
+.is-open {
+  display: block;
 }

@@ -1,9 +1,9 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "create-block/accordion",
+  "name": "create-block/accordion-item",
   "version": "0.1.0",
-  "title": "Accordion",
+  "title": "accordion-item",
   "category": "widgets",
   "icon": "smiley",
   "description": "Example block scaffolded with Create Block tool.",
@@ -22,6 +22,18 @@
       "type": "string",
       "default": "#E2E2E2"
     },
+    "text": {
+      "type": "string",
+      "default": "Heading goes here"
+    },
+    "content": {
+      "type": "string",
+      "default": "Paragraph content goes here. You can edit this text."
+    },
+    "open": {
+      "type": "boolean",
+      "default": false
+    },
     "fontSize": {
       "type": "string",
       "default": "20px"
@@ -39,16 +51,20 @@
       "default": "dashicons-minus"
     }
   },
-  "providesContext": {
-    "accordion/headingTag": "headingTag",
-    "accordion/headingIconOpen": "headingIconOpen",
-    "accordion/headingIconClose": "headingIconClose",
-    "accordion/fontSize": "fontSize"
-  },
   "supports": {
-    "html": false
+    "html": false,
+    "inserter": true
   },
-  "textdomain": "accordion",
+  "usesContext": [
+    "accordion/headingTag",
+    "accordion/headingIconOpen",
+    "accordion/headingIconClose",
+    "accordion/fontSize"
+  ],
+  "parent": [
+    "create-block/accordion"
+  ],
+  "textdomain": "accordion-item",
   "editorScript": "file:./index.js",
   "editorStyle": [
     "file:./index.css",

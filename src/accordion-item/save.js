@@ -21,20 +21,20 @@ export default function Save({ attributes }) {
 
     return (
         <div {...blockProps}>
-					<div className='accordion-header' style={{ backgroundColor: "#E2E2E2", }}>
-						<div className='accordion-header-text'>
+					<div className='accordion-item-header' style={{ backgroundColor: "#E2E2E2", }}>
+						<div className='accordion-item-header-text'>
                             <RichText.Content
                                 tagName={HeadingTag}
                                 value={text}
                                 style={{ color }}
                             />
 						</div>
-						<div className='accordion-header-icon'>
+						<div className='accordion-item-header-icon'>
 							<span class={`dashicons ${ open ? headingIconOpen : headingIconClose}`} style={{fontSize: "24px"}}>
 							</span>
 						</div>
 					</div>
-					<div className={`accordion-body ${open? "is-open" : ''}`} style={{backgroundColor: '#ffffff',}}>
+					<div className={`accordion-item-body ${open? "is-open" : ''}`} style={{backgroundColor: '#ffffff',}}>
 
                             <RichText.Content
                                 tagName="p"
