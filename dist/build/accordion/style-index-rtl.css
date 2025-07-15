@@ -1,0 +1,37 @@
+/*!*************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/accordion/style.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.accordion-header {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px;
+}
+.accordion-header .accordion-header-text {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.accordion-body {
+  padding: 10px;
+  display: none;
+}
+
+.wp-block-create-block-accordion {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 5px;
+  height: auto;
+}
+
+.is-open {
+  display: block;
+}

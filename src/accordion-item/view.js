@@ -22,12 +22,12 @@
 
 /* eslint-disable no-console */
 document.addEventListener('DOMContentLoaded', () => {
-	const accordions = document.querySelectorAll('.wp-block-create-block-accordion');
+	const accordions = document.querySelectorAll('.wp-block-create-block-accordion-item');
 
 	accordions.forEach((accordion) => {
-		const header = accordion.querySelector('.accordion-header');
-		const body = accordion.querySelector('.accordion-body');
-		const icon = accordion.querySelector('.accordion-header-icon span');
+		const header = accordion.querySelector('.accordion-item-header');
+		const body = accordion.querySelector('.accordion-item-body');
+		const icon = accordion.querySelector('.accordion-item-header-icon span');
 
 		if (!header || !body || !icon) return;
 
@@ -41,8 +41,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 			// Toggle class
 			 const toggleOpen = body.classList.toggle('is-open');
+			 header.classList.toggle('active', toggleOpen);
              icon.className = `dashicons ${toggleOpen ? closeIcon : openIcon}`;
 		});
 	});
+
+	console.log('Accordion Item View Script Loaded');
 });
 /* eslint-enable no-console */

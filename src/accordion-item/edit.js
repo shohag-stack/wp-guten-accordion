@@ -32,18 +32,12 @@ import './editor.scss';
  */
 export default function Edit({ attributes, setAttributes, context }) {
 
-	const { color, backgroundColor, text, open, borderColor } = attributes;
+	const { color, text, open } = attributes;
 	const fontSize = context['accordion/fontSize'] || '16px';
 	const headingIconOpen = context['accordion/headingIconOpen'];
 	const headingIconClose = context['accordion/headingIconClose'];
 	const HeadingTag = context['accordion/headingTag'] || 'h3';
-	const blockProps = useBlockProps({
-		style: {
-			backgroundColor: backgroundColor,
-			borderColor: borderColor,
-			color: color,
-		},
-	});
+	const blockProps = useBlockProps();
 
 	const toggleOpen = () => {
 		setAttributes({

@@ -5,23 +5,20 @@ import { __ } from '@wordpress/i18n';
 
 export default function Save({ attributes }) { 
 
-    const { color, backgroundColor, text, fontSize, open, borderColor, headingTag, headingIconOpen,content,headingIconClose } = attributes;
+    const { color, text, fontSize, open, headingTag, headingIconOpen,content,headingIconClose } = attributes;
 	const HeadingTag = headingTag || 'h3';
 	const blockProps = useBlockProps.save({
 		style: {
-			backgroundColor: backgroundColor,
-			borderColor: borderColor,
 			color: color,
 		},
+		className: "accordion-item",
         'data-icon-open': headingIconOpen,
 	    'data-icon-close': headingIconClose,
 	});
 
-    console.log("showing from save.js")
-
     return (
         <div {...blockProps}>
-					<div className='accordion-item-header' style={{ backgroundColor: "#E2E2E2", }}>
+					<div className='accordion-item-header'>
 						<div className='accordion-item-header-text'>
                             <RichText.Content
                                 tagName={HeadingTag}
@@ -39,10 +36,10 @@ export default function Save({ attributes }) {
                             <RichText.Content
                                 tagName="p"
                                 value={content}
+								style={{fontSize:fontSize}}
                             />
 
 					</div>
-                    { console.log("showing from save.js return") }
 			</div>
 )
 }

@@ -20,7 +20,7 @@
     },
     "borderColor": {
       "type": "string",
-      "default": "#E2E2E2"
+      "default": "#cecece"
     },
     "text": {
       "type": "string",

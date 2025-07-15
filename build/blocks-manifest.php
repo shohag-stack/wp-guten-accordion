@@ -90,7 +90,7 @@ return array(
 			),
 			'borderColor' => array(
 				'type' => 'string',
-				'default' => '#E2E2E2'
+				'default' => '#cecece'
 			),
 			'text' => array(
 				'type' => 'string',
@@ -156,7 +156,17 @@ return array(
 			
 		),
 		'supports' => array(
-			'html' => false
+			'html' => false,
+			'spacing' => array(
+				'padding' => true,
+				'margin' => true
+			),
+			'__experimentalBorder' => array(
+				'radius' => true,
+				'color' => true,
+				'width' => true
+			),
+			'shadow' => true
 		),
 		'attributes' => array(
 			'jsonUrl' => array(

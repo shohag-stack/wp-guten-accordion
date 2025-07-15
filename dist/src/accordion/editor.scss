@@ -1,0 +1,39 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+
+// Target the block list appender within your accordion block
+.wp-block-create-block-accordion {
+    .block-list-appender {
+        width: 100% !important;
+        max-width: none !important;
+        position: relative;
+        
+        .block-editor-button-block-appender {
+            width: 100% !important;
+            justify-content: center !important;
+        }
+    }
+
+    .wp-block-create-block-accordion-item {
+        border-bottom: 1px solid #ddd;
+        &:last-child {
+            border-bottom: none; // Remove border for the last item
+        }
+    }
+    
+    .add-new-accordion-wrapper {
+        width: 100%;     // Add padding inside the wrapper // Optional: visual separator
+        clear: both !important;             // Ensure it's below other content
+        
+        .block-editor-button-block-appender {
+            width: 100% !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+        }
+    }
+}

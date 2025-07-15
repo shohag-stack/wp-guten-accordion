@@ -254,13 +254,9 @@ function Save({
   const {
     color,
     backgroundColor,
-    text,
-    fontSize,
-    open,
     borderColor,
     headingTag,
     headingIconOpen,
-    content,
     headingIconClose
   } = attributes;
   const HeadingTag = headingTag || 'h3';
@@ -273,42 +269,10 @@ function Save({
     'data-icon-open': headingIconOpen,
     'data-icon-close': headingIconClose
   });
-  console.log("showing from save.js");
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
+  console.log(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.InnerBlocks);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
     ...blockProps,
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("div", {
-      className: "accordion-header",
-      style: {
-        backgroundColor: "#E2E2E2"
-      },
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-        className: "accordion-header-text",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
-          tagName: HeadingTag,
-          value: text,
-          style: {
-            color
-          }
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-        className: "accordion-header-icon",
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
-          class: `dashicons ${open ? headingIconOpen : headingIconClose}`,
-          style: {
-            fontSize: "24px"
-          }
-        })
-      })]
-    }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-      className: `accordion-body ${open ? "is-open" : ''}`,
-      style: {
-        backgroundColor: '#ffffff'
-      },
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.RichText.Content, {
-        tagName: "p",
-        value: content
-      })
-    }), console.log("showing from save.js return")]
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.InnerBlocks.Content, {})
   });
 }
 
